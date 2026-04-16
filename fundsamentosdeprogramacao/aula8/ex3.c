@@ -15,12 +15,12 @@ de 3 no intervalo de 1 a 322.*/
   #include <stdlib.h>
 
   int main () {
-    int contador = 1;
-    while (contador <= 322) {
-      if (contador % 3 == 0) {
-        printf("%d ", contador);
+    int contamult3 = 1;
+    while (contamult3 <= 322) {
+      if (contamult3 % 3 == 0) {
+        printf("%d ", contamult3);
       }
-      contador++;
+      contamult3++;
     }
     return 0;
   }

@@ -14,13 +14,13 @@ entre 240 e 730 inclusive.*/
  #include <stdio.h>
  #include <stdlib.h>
     
-  int main () {
-  int contador = 240;
-  while (contador <= 730) {
-  if (contador % 2 == 0) { 
-  printf("%d ", contador);
-  } 
-  contador++;
-  }
- return 0;
+ int main () {
+    int contapar = 240;
+    while (contapar <= 730) {
+        if (contapar % 2 == 0) 
+            printf("%d ", contapar);
+    
+        contapar++;
+    }
+    return 0;
 }

@@ -12,3 +12,14 @@ entre 100 e 200 inclusive.*/
 
 #include <stdio.h>
 #include <stdlib.h>
+
+int main () {
+    int contaimpar = 100;
+    while (contaimpar <= 200) {
+        if (contaimpar % 2 != 0) 
+            printf("%d ", contaimpar);
+    
+        contaimpar++;
+    }
+    return 0;
+}

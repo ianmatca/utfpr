@@ -14,10 +14,10 @@
   #include <stdlib.h>
 
   int main () {
-    int contador = 100;
-    while (contador >= 1) {
-      printf("%d ", contador);
-      contador--;
+    int contasoma = 100;
+    while (contasoma >= 1) {
+      printf("%d ", contasoma);
+      contasoma--;
     }
     return 0;
   }
