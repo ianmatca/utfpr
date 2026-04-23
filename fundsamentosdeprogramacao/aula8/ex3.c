@@ -11,16 +11,17 @@
  /*3) Crie um algoritmo que exiba todos os números múltiplos
 de 3 no intervalo de 1 a 322.*/
 
-  #include <stdio.h>
-  #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-  int main () {
-    int contamult3 = 1;
-    while (contamult3 <= 322) {
-      if (contamult3 % 3 == 0) {
-        printf("%d ", contamult3);
-      }
-      contamult3++;
+int main(){
+    int mult3 = 1;
+
+    while (mult3 <= 322)
+    {
+        if (mult3 % 3 == 0) // Os números cujo a divisão por 3 tem resto 0 são seus múltiplos
+            printf("%d\n", mult3);
+        mult3++;
     }
     return 0;
-  }
+}

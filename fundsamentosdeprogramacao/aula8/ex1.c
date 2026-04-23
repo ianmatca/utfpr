@@ -10,14 +10,17 @@
  */
  /*1) Faça um algoritmo que exiba todos números de 1 a 100.*/
 
- #include <stdio.h>
- #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
- int main() {
-  int conta100 = 1;
-  while (conta100 <= 100) {
-    printf("%d ", conta100);
-    conta100++;
-  }
-  return 0;
- }
+int main(){
+    int contador = 1;
+
+    while (index <= 100)
+    {
+        printf("%d\n",contador );
+        contador++;
+    }
+
+    return 0;
+}

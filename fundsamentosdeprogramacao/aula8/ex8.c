@@ -20,33 +20,32 @@ Digite sua opção:
  Caso digite uma opção diferente, deve mostrar uma mensagem de erro e
 mostrar o menu novamente.*/
 
-int main () {
-    int opcao;
-    printf("Menu do programa:\n");
-    printf("1 - Teste 1\n");
-    printf("2 - Teste 2\n");
-    printf("3 - Sair do programa\n");
-    printf("Digite sua opção: ");
-    scanf("%d", &opcao);
-        while (opcao !=3) {
-           switch (opcao) {
-            case 1:
-                printf("Teste 1\n\n");
-                break;
-            case 2:
-                printf("Teste 2\n\n");
-                break;
-            default:
-                printf("Opção inválida. Tente novamente.\n\n");
-                break;
-           }
-    printf("Menu do programa:\n");
-    printf("1 - Teste 1\n");
-    printf("2 - Teste 2\n");
-    printf("3 - Sair do programa\n");
-    printf("Digite sua opção: ");
-    scanf("%d", &opcao);
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int escolha = 1;
+
+    while (escolha != 3)
+    {
+        printf("Menu do programa:\n1 - Teste 1\n2 - Teste 2\n3 - Sair do programa\nDigite sua opção: ");
+        scanf("%d", &escolha);
+
+        switch (escolha)
+        {
+        case 1:
+            printf("Teste1\n");
+            break;
+        case 2:
+            printf("Teste3\n");
+            break;
+        case 3:
+            printf("Programa encerrado\n");
+            break;
+        default:
+            printf("Nenhuma opção ofertada foi escolhida, tente novamente.\n");
+            break;
         }
-        printf("Programa finalizado.\n");
+    }
     return 0;
 }

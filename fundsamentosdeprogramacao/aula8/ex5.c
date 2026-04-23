@@ -11,15 +11,21 @@
 entre 100 e 200 inclusive.*/
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
-int main () {
-    int contaimpar = 100;
-    while (contaimpar <= 200) {
-        if (contaimpar % 2 != 0) 
-            printf("%d ", contaimpar);
-    
-        contaimpar++;
+int main(){
+    int numreal = 1;
+    float num, sqrNum;
+
+    while (numreal <= 10)
+    {
+        printf("(%d) - Digite um número real: ", index);
+        scanf("%f", &num);
+        sqrNum = pow(num, 2);
+
+        printf("-> %.2f²=%.2f\n", num, sqrNum);
+
+        numreal++;
     }
     return 0;
 }
