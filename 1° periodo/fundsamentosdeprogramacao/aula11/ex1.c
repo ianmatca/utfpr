@@ -17,4 +17,20 @@ int main(){
     int vetor1 [5];
     int vetor2 [5];
     int vetorSoma [5];
+    printf("Digite os valores do primeiro vetor: \n");
+    for (int i = 0; i < 5; i++){
+        scanf("%d", &vetor1[i]);
+    }
+    printf("Digite os valores do segundo vetor: \n");
+    for (int i = 0; i < 5; i++){
+        scanf("%d", &vetor2[i]);
+    }
+    for (int i = 0; i < 5; i++){
+        vetorSoma[i] = vetor1[i] + vetor2[i];
+    }
+    printf("Vetor soma: \n");
+    for (int i = 0; i < 5; i++){
+        printf("%d ", vetorSoma[i]);
+    }
+    return 0;
 }
